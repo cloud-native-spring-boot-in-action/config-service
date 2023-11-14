@@ -1,0 +1,21 @@
+  version: '3'
+  tasks:
+    test:
+      cmds:
+        - ./gradlew test
+    run:
+      cmds:
+        - ./gradlew bootRun
+    build-image:
+      cmds:
+        - ./gradlew bootBuildImage
+
+    #Compiles the code and packages it
+    build-app:
+      cmds:
+        - ./gradlew bootJar
+
+    # Build and test the app
+    build:
+      cmds:
+        - ./gradlew build
